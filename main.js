@@ -36,7 +36,7 @@ function startQuiz(domain) {
     while (app.firstElementChild) {
       app.firstElementChild.remove();
     }
-    const progress = getProgressBar(Questions.length, currentQuestion);
+    const progress = getProgressBar(Questions[domain].length, currentQuestion);
     app.appendChild(progress);
   }
 
@@ -65,7 +65,7 @@ function startQuiz(domain) {
     const h1 = document.createElement("h1");
     h1.innerText = "Bravo ! Tu as terminé le quiz.";
     const p = document.createElement("p");
-    p.innerText = `Tu as eu ${score} sur ${Questions.length} point !`;
+    p.innerText = `Tu as eu ${score} sur ${Questions[domain].length} point !`;
 
     app.appendChild(h1);
     app.appendChild(p);
