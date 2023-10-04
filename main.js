@@ -5,13 +5,27 @@ const TIMEOUT = 4000;
 
 const app = document.querySelector("#app");
 const logo =  document.querySelector(".logo")
-
+let domain = ""
 const startButton = document.querySelector("#start");
+startButton.addEventListener("click", () => {
+  startQuiz(domain);
+});
+const domaines = document.querySelectorAll('.domainButton');
 
-startButton.addEventListener("click", startQuiz);
+domaines.forEach(button => {
+      button.addEventListener('click', () => {
+        domaines.forEach(btn => {
+          btn.classList.remove('selected');
+        });
 
-function startQuiz(event) {
-  event.stopPropagation();
+        button.classList.add('selected');
+        domain = button.dataset.domain;
+        console.log(domain);
+      });
+    });
+  
+function startQuiz(domain) {
+  console.log("Mon domaine", domain);
   let currentQuestion = 0;
   let score = 0;
 
@@ -28,7 +42,7 @@ function startQuiz(event) {
 
   function displayQuestion(index) {
     clean();
-    const question = Questions[index];
+    const question = Questions[domain][index];
 
     if (!question) {
       displayFinishMessage();
@@ -64,7 +78,7 @@ function startQuiz(event) {
 
     const value = selectedAnswer.value;
 
-    const question = Questions[currentQuestion];
+    const question = Questions[domain][currentQuestion];
 
     const isCorrect = question.correct === value;
 

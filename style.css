@@ -169,3 +169,15 @@ progress {
   margin-top: -350px;
   border-radius: 10px;
 }
+
+#domainButtons{
+    display: flex;
+    flex-direction: column;
+}
+.domainButton {
+    margin-top: 20px;
+}
+
+.domainButton.selected {
+    background-color: rgb(0, 255, 106);
+  }
