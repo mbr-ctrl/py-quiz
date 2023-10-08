@@ -29,7 +29,7 @@ function startQuiz(domain) {
   let currentQuestion = 0;
   let score = 0;
 
-  logo.style.marginTop = "-600px";
+  logo.style.marginTop = "-750px";
   displayQuestion(currentQuestion);
 
   function clean() {

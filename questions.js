@@ -2,17 +2,17 @@ export const Questions = {
     python: [
         {
             "question": "Qu'est-ce qu'une fonction lambda en Python ?",
-            "answers": ['Une fonction anonyme définie en une seule ligne', "Une fonction qui accepte un nombre variable d'arguments", 'Une fonction utilisée pour la programmation orientée objet'],
+            "answers": ["Une fonction qui accepte un nombre variable d'arguments", 'Une fonction anonyme définie en une seule ligne', 'Une fonction utilisée pour la programmation orientée objet'],
             "correct": 'Une fonction anonyme définie en une seule ligne'
         },
         {
             "question": "Quelle est la différence entre une liste et un tuple en Python ?",
-            "answers": ["Une liste est mutable, tandis qu'un tuple est immuable", "Une liste est ordonnée, tandis qu'un tuple ne l'est pas", "Une liste peut contenir des éléments de types différents, tandis qu'un tuple ne peut pas"],
+            "answers": [ "Une liste est ordonnée, tandis qu'un tuple ne l'est pas", "Une liste peut contenir des éléments de types différents, tandis qu'un tuple ne peut pas", "Une liste est mutable, tandis qu'un tuple est immuable"],
             "correct": 'Une liste est mutable, tandis qu\'un tuple est immuable'
         },
         {
             "question": "Qu'est-ce qu'une exception en Python ?",
-            "answers": ["Une erreur qui se produit lors de l'exécution d'un programme", 'Un avertissement indiquant un problème potentiel', "Une méthode utilisée pour arrêter l'exécution d'un programme"],
+            "answers": [ 'Un avertissement indiquant un problème potentiel', "Une erreur qui se produit lors de l'exécution d'un programme", "Une méthode utilisée pour arrêter l'exécution d'un programme"],
             "correct": 'Une erreur qui se produit lors de l\'exécution d\'un programme'
         },
         {
@@ -22,12 +22,12 @@ export const Questions = {
         },
         {
             "question": "Quelle est la méthode pour ouvrir un fichier en mode écriture en Python ?",
-            "answers": ['open("fichier.txt", "w")', 'open("fichier.txt", "r")', 'open("fichier.txt", "a")'],
+            "answers": [ 'open("fichier.txt", "r")', 'open("fichier.txt", "w")', 'open("fichier.txt", "a")'],
             "correct": 'open("fichier.txt", "w")'
         },
         {
             "question": "Quelle est la méthode pour trier une liste en utilisant une fonction de comparaison personnalisée en Python ?",
-            "answers": ['sort(key=ma_fonction)', 'sorted(liste, key=ma_fonction)', 'list.sort(key=ma_fonction)'],
+            "answers": [ 'sorted(liste, key=ma_fonction)', 'list.sort(key=ma_fonction)', 'sort(key=ma_fonction)'],
             "correct": 'sorted(liste, key=ma_fonction)'
         },
         {
@@ -42,44 +42,44 @@ export const Questions = {
         },
         {
             "question": "Quelle est la méthode pour gérer des threads en Python ?",
-            "answers": ['threading', 'concurrent.futures', 'asyncio'],
+            "answers": [ 'concurrent.futures', 'threading', 'asyncio'],
             "correct": 'threading'
         },
         {
             "question": "Quelle est la méthode pour mesurer le temps d'exécution d'un morceau de code en Python ?",
-            "answers": ['timeit', 'timer', 'clock'],
+            "answers": [ 'timer', 'timeit', 'clock'],
             "correct": 'timeit'
         }
     ],
     javascript: [
         {
             "question": "Quelle est la syntaxe pour afficher du texte dans la console ?",
-            "answers": ['console.log("Hello, World!")', 'alert("Hello, World!")', 'print("Hello, World!")'],
+            "answers": ['alert("Hello, World!")', 'print("Hello, World!")', 'console.log("Hello, World!")', ],
             "correct": 'console.log("Hello, World!")'
         },
         {
             "question": "Comment déclarer une variable en JavaScript ?",
-            "answers": ['var x = 5', 'let x = 5', 'x = 5'],
+            "answers": [ 'let x = 5', 'var x = 5', 'x = 5'],
             "correct": 'let x = 5'
         },
         {
             "question": "Quelle est la méthode pour obtenir la longueur d'une chaîne de caractères en JavaScript ?",
-            "answers": ['length()', 'size()', 'len()'],
+            "answers": [ 'size()', 'length()', 'len()'],
             "correct": 'length()'
         },
         {
             "question": "Comment commenter une ligne de code en JavaScript ?",
-            "answers": ['// Commentaire', '# Commentaire', '/* Commentaire */'],
+            "answers": [ '# Commentaire', '/* Commentaire */', '// Commentaire'],
             "correct": '// Commentaire'
         },
         {
             "question": "Quelle est la syntaxe pour une boucle 'for' en JavaScript ?",
-            "answers": ['for (let i = 0; i < 5; i++)', 'for i in range(5):', 'for i = 0; i < 5; i++'],
+            "answers": ['for i in range(5):', 'for i = 0; i < 5; i++', 'for (let i = 0; i < 5; i++)'],
             "correct": 'for (let i = 0; i < 5; i++)'
         },
         {
             "question": "Quelle est la méthode pour convertir une chaîne de caractères en entier en JavaScript ?",
-            "answers": ['parseInt()', 'int()', 'convert()'],
+            "answers": ['int()', 'convert()', 'parseInt()',],
             "correct": 'parseInt()'
         },
         {
